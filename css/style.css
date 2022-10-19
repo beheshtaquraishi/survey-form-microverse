@@ -4,3 +4,7 @@ body{
     background-repeat: no-repeat;*/
     background-color: rgba(136,136, 206,0.7 );
 }
+main{
+    max-width: 700px;
+
+}
