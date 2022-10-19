@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <p id="description"></p>
+    <form id="survey-form">
+        <div>
+            <label id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required >
+        </div>
+        <div>
+            <label id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div>
+            <label id="number-label">Age (optional)</label>
+            <input type="number" id="number" placeholder="Enter your age" min="5" max="50">
+        </div>
+        <div>
+            <label>which option best describes your current role?</label>
+            <select id="dropdown">
+                <option>select current role</option>
+                <option>student</option>
+                <option>full time job</option>
+                <option>first time learner</option>
+                <option>prefer not to say</option>
+                <option>other</option>
+            </select>
+        </div>
+        <div>
+            <label> would you recommend freeCodeComp to a friend?</label>
+            <div>
+                <input type="radio" name="recommend">Definitely
+            </div>
+            <div>
+                <input type="radio" name="recommend">Maybe
+            </div>
+            <div>
+                <input type="radio" name="recommend">Not sure
+            </div>
+        </div>
+        <div>
+            <label>what is your favorite feature of freeCodeComp?</label>
+            <select >
+                <option>select an option</option>
+                <option>challenges</option>
+                <option>Projects</option>
+                <option>community</option>
+                <option>open source</option>
+            </select>
+        </div>
+        <div>
+            <label>what would you like to see improved?(check all that apply)</label>
+            <div>
+                <input type="checkbox"> Front-end Projects
+            </div>
+            <div>
+                <input type="radio" >Back-end Project
+            </div>
+            <div>
+                <input type="checkbox" >data visualization 
+            </div>
+            <div>
+                <input type="checkbox" >challenges
+            </div>
+            <div>
+                <input type="checkbox" >open source community
+            </div>
+            <div>
+                <input type="checkbox" >gitter help rooms
+            </div>
+            <div>
+                <input type="checkbox" >videos
+            </div>
+            <div>
+                <input type="checkbox" >city meetups
+            </div>
+            <div>
+                <input type="checkbox" >wiki
+            </div>
+            <div>
+                <input type="checkbox" >forum
+            </div>
+            <div>
+                <input type="checkbox" >additonal courses
+            </div>
+        </div>
+        <div>
+            <label>Any comments or suggestions?</label>
+            <textarea placeholder="Enter your comments here"></textarea>
+        </div>
+        <div>
+            <button id="submit">submit</button>
+        </div>
+    </form>
+    
+</body>
+</html>
