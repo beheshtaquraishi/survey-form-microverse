@@ -6,5 +6,18 @@ body{
 }
 main{
     max-width: 700px;
+}
+label{
+    display: block;
 
+}
+input{
+    margin-right: 10px;
+    border-radius: 6px;
+}
+#submit{
+    display: block;
+    width: 100%;
+    color: green;
+    border-radius: 6px;
 }
