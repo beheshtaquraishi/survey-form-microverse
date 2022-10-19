@@ -1,5 +1,6 @@
 body{
-    background-image: url('/images/samsung-memory-iRY8lnq0xb0-unsplash.jpg');
+    /*background-image: url('/images/samsung-memory-iRY8lnq0xb0-unsplash.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+    background-color: rgba(136,136, 206,0.7 );
 }
