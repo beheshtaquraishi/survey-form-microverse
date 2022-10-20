@@ -1,23 +1,61 @@
-body{
-    /*background-image: url('/images/samsung-memory-iRY8lnq0xb0-unsplash.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;*/
-    background-color: rgba(136,136, 206,0.7 );
+body {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient#try_it */
+  background: linear-gradient(
+      115deg,
+      rgb(54 59 211 / 80%),
+      rgb(31 33 104 / 80%)
+    ),
+    url(../images/samsung-memory-iRY8lnq0xb0-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
 }
-main{
-    max-width: 700px;
+main {
+  max-width: 700px !important;
+  color: #fff;
+  margin: 4rem auto;
 }
-label{
-    display: block;
-
+label {
+  display: block;
 }
-input{
-    margin-right: 10px;
-    border-radius: 6px;
+header p {
+  color: #efefef;
+  font-style: italic;
 }
-#submit{
-    display: block;
-    width: 100%;
-    color: green;
-    border-radius: 6px;
+input {
+  margin-right: 0.6rem;
+  border-radius: 0.2rem;
+}
+button,
+input[type="text"] {
+  height: 2.4rem;
+  border: 1px solid thin gray;
+}
+input[type="radio"],
+input[type="checkbox"]{
+  height: 1.2rem;
+  width: 1.2rem;
+}
+#submit {
+  display: block;
+  width: 100%;
+  background-color: green;
+  color: #fff;
+  border-radius: 0.2rem;
+  border: none;
+}
+#survey-form > div {
+  margin: 1.2rem 0;
+}
+#survey-form div:first-child {
+  margin-top: 0;
+}
+#survey-form {
+  background-color: rgb(11 11 64 / 85%);
+  padding: 2.4rem;
+  border-radius: 0.3rem;
 }

@@ -12,26 +12,26 @@
 </head>
 <body>
     <main class="container">
-        <header>
+        <header class="d-flex text-center flex-column justify-content-center">
             <h1 id="title">freeCodeCamp Survey Form</h1>
             <p id="description">Thank you for taking the time to help us improve the platform</p>
         </header>
         <form id="survey-form">
-            <div>
+            <div class="form-group">
                 <label id="name-label">Name</label>
-                <input type="text" id="name" placeholder="Enter your name" required >
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required >
             </div>
             <div>
                 <label id="email-label">Email</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
             </div>
             <div>
                 <label id="number-label">Age (optional)</label>
-                <input type="number" id="number" placeholder="Enter your age" min="5" max="50">
+                <input type="number" class="form-control" id="number" placeholder="Enter your age" min="5" max="50">
             </div>
             <div>
-                <label>which option best describes your current role?</label>
-                <select id="dropdown">
+                <label>Which option best describes your current role?</label>
+                <select id="dropdown" class="form-select">
                     <option value="">select current role</option>
                     <option value="student">student</option>
                     <option value="full time job">full time job</option>
@@ -41,20 +41,20 @@
                 </select>
             </div>
             <div>
-                <label> would you recommend freeCodeComp to a friend?</label>
-                <div>
+                <label> Would you recommend freeCodeComp to a friend?</label>
+                <div class="d-flex flex-row">
                     <input type="radio" value="definitely" name="recommend">Definitely
                 </div>
-                <div>
+                <div class="d-flex flex-row my-2">
                     <input type="radio" value="maybe" name="recommend">Maybe
                 </div>
-                <div>
+                <div class="d-flex flex-row">
                     <input type="radio" value="not sure" name="recommend">Not sure
                 </div>
             </div>
             <div>
-                <label>what is your favorite feature of freeCodeComp?</label>
-                <select >
+                <label>What is your favorite feature of freeCodeComp?</label>
+                <select class="form-select">
                     <option>select an option</option>
                     <option>challenges</option>
                     <option>Projects</option>
@@ -63,47 +63,47 @@
                 </select>
             </div>
             <div>
-                <label>what would you like to see improved?(check all that apply)</label>
-                <div>
-                    <input type="checkbox" value="ffp"> Front-end Projects
+                <label>What would you like to see improved?(check all that apply)</label>
+                <div class="d-flex flex-row">
+                    <input type="checkbox" value="ffp">Front-end Projects
                 </div>
-                <div>
+                <div class="d-flex flex-row my-2">
                     <input type="checkbox" value="bbp" >Back-end Project
                 </div>
-                <div>
-                    <input type="checkbox" value="dv" >data visualization 
+                <div class="d-flex flex-row">
+                    <input type="checkbox" value="dv" >Data Visualization 
                 </div>
-                <div>
-                    <input type="checkbox" value="c" >challenges
+                <div class="d-flex flex-row my-2">
+                    <input type="checkbox" value="c" >Challenges
                 </div>
-                <div>
-                    <input type="checkbox" value="osc" >open source community
+                <div class="d-flex flex-row">
+                    <input type="checkbox" value="osc" >Open Source Community
                 </div>
-                <div>
-                    <input type="checkbox"  value="ghr">gitter help rooms
+                <div class="d-flex flex-row my-2">
+                    <input type="checkbox"  value="ghr">Gitter help rooms
                 </div>
-                <div>
-                    <input type="checkbox" value="v" >videos
+                <div class="d-flex flex-row">
+                    <input type="checkbox" value="v" >Videos
                 </div>
-                <div>
-                    <input type="checkbox" value="cm" >city meetups
+                <div class="d-flex flex-row my-2">
+                    <input type="checkbox" value="cm" >City meetups
                 </div>
-                <div>
-                    <input type="checkbox" value="w" >wiki
+                <div class="d-flex flex-row">
+                    <input type="checkbox" value="w" >Wiki
                 </div>
-                <div>
-                    <input type="checkbox" value="f" >forum
+                <div class="d-flex flex-row my-2">
+                    <input type="checkbox" value="f" >Forum
                 </div>
-                <div>
-                    <input type="checkbox" value="ac" >additonal courses
+                <div class="d-flex flex-row">
+                    <input type="checkbox" value="ac" >Additonal Courses
                 </div>
             </div>
             <div>
                 <label>Any comments or suggestions?</label>
-                <textarea placeholder="Enter your comments here"></textarea>
+                <textarea class="form-control" rows="5" placeholder="Enter your comments here"></textarea>
             </div>
             <div>
-                <button id="submit">submit</button>
+                <button id="submit">Submit</button>
             </div>
         </form>
     </main>
